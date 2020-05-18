@@ -12,17 +12,83 @@
     <script src="assets/js/script.js" defer></script>
 </head>
 <body>
+    <header>
+        <div id="burgerMenuButtonWrapper">
+            <a class="btn padding-s" href="#" onclick="toggleClass('header > nav', 'active');return false">menu</a>
+        </div>
+        <nav>
+            <div id="burgermenuCloseButtonWrapper"><a class="btn padding-s" href="#" onclick="toggleClass('header > nav', 'active');return false">Close</a></div>
+            <ul>
+                <li>
+                    <a href="#">Menuitem 1</a>
+                    <ul>
+                        <li><a href="#">Subitem 1</a></li>
+                        <li><a href="#">Subitem 2</a></li>
+                        <li><a href="#">Subitem 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Menuitem 2</a>
+                    <ul>
+                        <li><a href="#">Subitem 1</a></li>
+                        <li><a href="#">Subitem 2</a></li>
+                        <li><a href="#">Subitem 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Menuitem 3</a>
+                    <ul>
+                        <li><a href="#">Subitem 1</a></li>
+                        <li><a href="#">Subitem 2</a></li>
+                        <li><a href="#">Subitem 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Menuitem 4</a>
+                    <ul>
+                        <li><a href="#">Subitem 1</a></li>
+                        <li><a href="#">Subitem 2</a></li>
+                        <li><a href="#">Subitem 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Menuitem 5</a>
+                    <ul>
+                        <li><a href="#">Subitem 1</a></li>
+                        <li><a href="#">Subitem 2</a></li>
+                        <li><a href="#">Subitem 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <article class="color-surface padding-l">
             <h1>Headline</h1>
             <div class="flex">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores quibusdam ipsam quisquam quod maiores molestiae perferendis temporibus impedit? Et ipsum autem nobis, labore aspernatur recusandae in qui saepe blanditiis?</p>
-                    <a href="#" class="btn padding-m">Test button</a>
+                    <a href="#" class="btn padding-m" onclick="toggleClass('#showMore1', 'active')">Vis mere toggle</a>
+                </div>
+                <div class="showMore" id="showMore1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores quibusdam ipsam quisquam quod maiores molestiae perferendis temporibus impedit? Et ipsum autem nobis, labore aspernatur recusandae in qui saepe blanditiis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores quibusdam ipsam quisquam quod maiores molestiae perferendis temporibus impedit? Et ipsum autem nobis, labore aspernatur recusandae in qui saepe blanditiis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores quibusdam ipsam quisquam quod maiores molestiae perferendis temporibus impedit? Et ipsum autem nobis, labore aspernatur recusandae in qui saepe blanditiis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores quibusdam ipsam quisquam quod maiores molestiae perferendis temporibus impedit? Et ipsum autem nobis, labore aspernatur recusandae in qui saepe blanditiis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores quibusdam ipsam quisquam quod maiores molestiae perferendis temporibus impedit? Et ipsum autem nobis, labore aspernatur recusandae in qui saepe blanditiis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores quibusdam ipsam quisquam quod maiores molestiae perferendis temporibus impedit? Et ipsum autem nobis, labore aspernatur recusandae in qui saepe blanditiis?</p>
                 </div>
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores quibusdam ipsam quisquam quod maiores molestiae perferendis temporibus impedit? Et ipsum autem nobis, labore aspernatur recusandae in qui saepe blanditiis?</p>
-                    <a href="#" class="btn mwa padding-m">Test button</a>
+                    <a href="#" class="btn padding-m" onclick="toggleClassDeleteBtn(this, '#showMore2', 'active')">Vis mere og fjern knap</a>
+                </div>
+                <div class="showMore" id="showMore2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores quibusdam ipsam quisquam quod maiores molestiae perferendis temporibus impedit? Et ipsum autem nobis, labore aspernatur recusandae in qui saepe blanditiis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores quibusdam ipsam quisquam quod maiores molestiae perferendis temporibus impedit? Et ipsum autem nobis, labore aspernatur recusandae in qui saepe blanditiis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores quibusdam ipsam quisquam quod maiores molestiae perferendis temporibus impedit? Et ipsum autem nobis, labore aspernatur recusandae in qui saepe blanditiis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores quibusdam ipsam quisquam quod maiores molestiae perferendis temporibus impedit? Et ipsum autem nobis, labore aspernatur recusandae in qui saepe blanditiis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores quibusdam ipsam quisquam quod maiores molestiae perferendis temporibus impedit? Et ipsum autem nobis, labore aspernatur recusandae in qui saepe blanditiis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores quibusdam ipsam quisquam quod maiores molestiae perferendis temporibus impedit? Et ipsum autem nobis, labore aspernatur recusandae in qui saepe blanditiis?</p>
                 </div>
             </div>
         </article>
